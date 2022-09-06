@@ -1,0 +1,319 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*NAVBAR*/
+.btn-contact {
+    background-color: #fff;
+    color: pink;
+    font-weight: bold;
+}
+
+.btn-contact:hover {
+    background-color: rgb(255, 230, 234);
+    color: pink;
+    font-weight: bold;
+}
+
+.btn-contact1 {
+    background-color: pink;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-contact1:hover {
+    background-color: rgb(255, 173, 187) !important;
+}
+
+/*ABOUT*/
+.title-about {
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.text-about {
+    font-size: 1.2rem;
+}
+
+.text-about span {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 990px) {
+    .title-about {
+        margin-top: 30px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .text-about {
+        font-size: 15px;
+    }
+}
+
+/*PARALLAX PRODUCTS*/
+.parallax-container {
+    height: 260px;
+    margin-bottom: 50px;
+}
+
+.title-slide {
+    margin-top: 5rem;
+}
+
+.title-carousel,
+.subtitle-carousel {
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+}
+
+.title-carousel {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.subtitle-carousel {
+    font-size: 2rem;
+    color: #000;
+}
+
+.slider {
+    height: 650px !important;
+    margin-bottom: 40px;
+}
+
+.slides {
+    height: 600px !important;
+}
+
+.indicator-item.active {
+    background-color: rgb(255, 187, 231) !important;
+}
+
+@media screen and (max-width: 600px) {
+    .title-carousel {
+        font-size: 2rem;
+    }
+
+    .subtitle-carousel {
+        font-size: 1.5rem;
+    }
+}
+
+/*CONTAINER CONTACT*/
+.container-contact {
+    background-color: rgb(241, 241, 241);
+    padding: 30px 0;
+}
+
+.title-contact {
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+.subtitle-contact {
+    font-size: 1.5rem;
+}
+
+.btn-contact {
+    background-color: #fff;
+    color: rgb(255, 131, 191);
+    font-weight: bold;
+}
+
+.btn-contact:focus {
+    background-color: rgb(255, 178, 220);
+}
+
+.btn-contact1:focus {
+    background-color: rgb(255, 178, 220);
+}
+
+.btn-contact:hover {
+    background-color: rgb(255, 178, 220);
+    color: #fff;
+}
+
+.btn-contact1 {
+    background-color: rgb(255, 158, 240);
+    font-weight: bold !important;
+}
+
+.btn-contact1:hover {
+    background-color: rgb(255, 178, 245) !important;
+    color: rgb(255, 158, 240);
+}
+
+/*MODAL CONTACT*/
+input.validate:focus {
+    border-bottom: 1px solid rgb(255, 127, 193) !important;
+    box-shadow: 0 1px 0 0 #ff7dc3 !important;
+}
+
+input.valid[type=tel]:not(.browser-default),
+input.valid[type=tel]:not(.browser-default):focus,
+input.valid[type=text]:not(.browser-default),
+input.valid[type=text]:not(.browser-default):focus,
+input.valid[type=email]:not(.browser-default),
+input.valid[type=email]:not(.browser-default):focus,
+textarea.materialize-textarea:focus:not([readonly]),
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid rgb(255, 148, 232);
+    box-shadow: 0 1px 0 0 #ff93cd;
+}
+
+/*FOOTER*/
+.text-logo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.icon-footer {
+    font-size: 2rem;
+    color: #fff;
+    padding: 1.5rem;
+}
+
+.icon-footer:hover {
+    color: #ffbbdf;
+    transition: .3s;
+}
+
+.link-item-footer {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.container-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.link-item-footer {
+    padding: 2rem;
+}
+
+.link-item-footer:hover {
+    color: #ffbbdf;
+    transition: .3s;
+}
+
+.container-footer {
+    margin: auto;
+}
+
+@media screen and (max-width: 590px) {
+    .container-links {
+        display: grid;
+        text-align: center;
+    }
+}
+
+/*------------------------------- FORM PAGE ----------------------------------*/
+.text-form {
+    text-align: center;
+}
+
+.title-form {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.subtitle-form {
+    font-size: 1.5rem;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-field {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100% !important;
+}
+
+.container-form {
+    width: 70%;
+}
+
+.btn-submit {
+    background-color: #fff;
+    border: 2px solid #ffbbdf;
+    width: 250px;
+    color: #ff9bd0;
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 17px;
+}
+
+.btn-submit:hover {
+    background-color: #ffbbdf;
+    border: 2px solid #ffbbdf;
+    width: 250px;
+    color: #ff75bf;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.btn-submit:focus {
+    background-color: rgb(255, 219, 239);
+}
+
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid #ff74d5;
+    border-bottom: 2px solid #ff74d5;
+}
+
+.dropdown-content li>a,
+.dropdown-content li>span {
+    color: rgb(255, 131, 191);
+}
+
+.text-radio {
+    font-size: 17px;
+}
+
+[type="radio"]:checked+span:after,
+[type="radio"].with-gap:checked+span:after {
+    background-color: #ff93cd;
+    border: #ff7dc3;
+}
+
+/*MODAL CONTACT*/
+.title-contact {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.subtitle-contact {
+    font-size: 16px;
+}
+
+.error {
+    color: rgb(255, 127, 193);
+    font-size: 12px;
+}
+
+.modal {
+    top: 30% !important;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.btn-flat {
+    background-color: #ffc0e2;
+    font-weight: 600;
+}

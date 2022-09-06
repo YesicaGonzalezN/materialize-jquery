@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Juana's Bags</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e5e5058fb4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <!--NAV-->
+    <div class="navbar-fixed">
+        <nav class="pink lighten-4">
+            <div class="nav-wrapper container">
+                <a href="/" class="brand-logo logo-nav">Juana's</a>
+                <a href="#" class="sidenav-trigger" data-target="menu-responsive">
+                    <div class="material-icons">menu</div>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="nav-items" href="/">Inicio</a></li>
+                    <li><a class="waves-effect waves-light btn btn-contact" href="form.html">CONTACTAR</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--SIDENAV RESPONSIVE-->
+    <ul class="sidenav" id="menu-responsive">
+        <li><a href="/">Inicio</a></li>
+        <li><a class="waves-effect waves-light btn btn-contact1" href="form.html">CONTACTAR</a></li>
+    </ul>
+
+    <!--BANNER PRINCIPAL-->
+    <div class="container-banner">
+        <img class="responsive-img" src="assets/images/coleccion.png">
+    </div>
+
+    <!-- CONTACT FORM JQUERY -->
+    <div class="text-form">
+        <h3 class="title-form">Escríbenos</h3>
+        <h4 class="subtitle-form">¡Nos encanta leer sus mensajes!</h4>
+    </div>
+    <div class="container">
+        <div class="row container-form">
+            <form id="form-contact" class="col s12">
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <input placeholder="Nombre" id="nombre" type="text" name="nombre" class="validate">
+                        <div class="error" id="nameReq"></div>
+                        <div class="error" id="nameError"></div>
+                        <div class="error" id="nombreResult"></div>
+                        <label for="nombre"></label>
+                    </div>
+                </div>
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <input placeholder="Email" id="email" type="email" name="email" class="validate">
+                        <label for="email"></label>
+                        <div class="error" id="emailReq"></div>
+                        <div class="error" id="emailError"></div>
+                        <div class="error" id="emailResult"></div>
+                    </div>
+                </div>
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <input placeholder="Teléfono" id="tel" type="tel" name="tel" class="validate">
+                        <label for="tel"></label>
+                        <div class="error" id="telReq"></div>
+                        <div class="error" id="telError"></div>
+                        <div class="error" id="telResult"></div>
+                    </div>
+                </div>
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <select id="select" name="genero">
+                            <option value="genero">Género</option>
+                            <option value="femenino">Femenino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="no binario">No binario</option>
+                        </select>
+                        <div class="error" id="selectError"></div>
+                        <div class="error" id="selectResult"></div>
+                    </div>
+                </div>
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <h5 class="text-radio">¿Sos mayorista o minorista?</h5>
+                        <p>
+                            <label>
+                                <input id="mayorista" name="group1" value="mayorista" type="radio" />
+                                <span>Mayorista</span>
+                            </label>
+                        </p>
+                        <p>
+                            <label>
+                                <input id="minorista" name="group1" value="minorista" type="radio" />
+                                <span>Minorista</span>
+                            </label>
+                        </p>
+                        <div class="error" id="radioReq"></div>
+                        <div class="error" id="radioError">Debe elegir una opción.</div>
+                    </div>
+                </div>
+                <div class="row input-row">
+                    <div class="input-field col s8">
+                        <textarea name="mensaje" placeholder="Escribe tu mensaje..." id="textarea1"
+                            class="materialize-textarea"></textarea>
+                        <label for="textarea1"></label>
+                        <div class="error" id="textareaReq"></div>
+                        <div class="error" id="textareaError"></div>
+                    </div>
+                </div>
+                <div>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="check" id="check" />
+                            <span>Acepto los Términos & Condiciones.</span>
+                            <div class="error" id="checkError"></div>
+                        </label>
+                    </p>
+                </div>
+                <div class="center-align">
+                    <button id="btn-submit" class="btn waves-effect waves-light btn-submit modal-trigger" type="submit"
+                        name="action" href="modal1" data-target="modal1">Enviar
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL FORM -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4 class="title-contact">¡Tu mensaje fue enviado!</h4>
+            <p class="subtitle-contact">Gracias por escribirnos, apreciamos mucho sus mensajes.
+                <i class="material-icons">favorite</i></p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="page-footer pink lighten-3">
+        <div class="container container-footer">
+            <div class="footer-logo center-align">
+                <h5 class="text-logo">Juana's Bags</h5>
+                <a class="icon-footer" href="https://www.facebook.com/juanasbagsoficial"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="icon-footer" href="https://www.instagram.com/juanasbagsoficial"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+            <ul class="container-links">
+                <li><a class="link-item-footer" href="/">Inicio</a></li>
+                <li><a class="link-item-footer" href="form.html">Contáctanos</a></li>
+            </ul>
+        </div>
+        <div class="footer-copyright center-align">
+            <div class="container">
+                © 2022 Bajo licencia de Juana's Bags. Buenos Aires, Argentina.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+
+</html>
